@@ -1,0 +1,6 @@
+domain: lailin.xyz
+layout:
+- go.kubebuilder.io/v3
+projectName: kubebuilder
+repo: github.com/mohuishou/blog-code/k8s-operator/02-kubebuilder
+version: "3"
