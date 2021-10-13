@@ -1,0 +1,6 @@
+apiVersion: apps.ming.xyz/v1
+kind: Application
+metadata:
+  name: application-sample
+spec:
+  product: ming 
