@@ -8,4 +8,4 @@ webhook:
   port: 9443
 leaderElection:
   leaderElect: true
-  resourceName: 6b62871a.lailin.xyz
+  resourceName: a738de8e.ming.xyz

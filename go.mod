@@ -1,4 +1,4 @@
-module github.com/mohuishou/blog-code/k8s-operator/02-kubebuilder
+module github.com/leemingeer/NodePoolOperator
 
 go 1.15
 

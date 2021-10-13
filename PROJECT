@@ -1,6 +1,6 @@
-domain: lailin.xyz
+domain: ming.xyz
 layout:
 - go.kubebuilder.io/v3
 projectName: kubebuilder
-repo: github.com/mohuishou/blog-code/k8s-operator/02-kubebuilder
+repo: github.com/leemingeer/NodePoolOperator
 version: "3"
