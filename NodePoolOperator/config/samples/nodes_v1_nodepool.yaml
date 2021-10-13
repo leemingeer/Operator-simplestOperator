@@ -1,0 +1,12 @@
+apiVersion: nodes.ming.xyz/v1
+kind: NodePool
+metadata:
+  name: nodepool-sample
+spec:
+  taints:
+    - key: node-pool.ming.xyz
+      value: master
+      effect: NoSchedule
+  labels:
+    "node-pool.ming.xyz/master": "10"
+  handler: runc

@@ -1,0 +1,20 @@
+domain: ming.xyz
+layout:
+- go.kubebuilder.io/v3
+projectName: nodepooloperator
+repo: github.com/leemingeer/SimpleOperator/NodePoolOperator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: ming.xyz
+  group: nodes
+  kind: NodePool
+  path: github.com/leemingeer/SimpleOperator/NodePoolOperator/api/v1
+  version: v1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"
