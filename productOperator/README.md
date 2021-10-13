@@ -14,11 +14,11 @@ curl -sSL https://github.com/kubernetes-sigs/kubebuilder/releases/download/v3.0.
 ```
 kubebuilder init \
 --domain ming.xyz \
---repo github.com/leemingeer/NodePoolOperator \
+--repo github.com/leemingeer/SimpleOperator/productOperator \
 --skip-go-version-check
 
 
-–-domain lailin.xyz 我们的项目的域名，crd的后缀group: apps.lailin.xyz
+–-domain ming.xyz 我们的项目的域名，crd的后缀group: apps.ming.xyz
 
 --repo xxx 是仓库地址，同时也是 go mode中的repo地址
 
