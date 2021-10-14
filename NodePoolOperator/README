@@ -224,3 +224,20 @@ Events:
 ## 部署
 
 WebHook 的运行需要校验证书，kubebuilder 官方建议我们使用 cert-manager 简化对证书的管理，所以我们先部署一下 cert-manager 的服务
+
+1. 部署一下 cert-manager 的服务
+```
+kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.3.1/cert-manager.yaml
+```
+
+2. build 镜像并且上传到dockerhub
+
+```
+make docker-build
+docker login
+docker push
+```
+3. 创建测试pod
+```
+kubectl apply -f config/samples/
+```

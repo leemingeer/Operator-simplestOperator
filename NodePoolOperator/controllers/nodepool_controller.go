@@ -57,6 +57,9 @@ const nodeFinalizer = "node.finalizers.node-pool.ming.xyz"
 //+kubebuilder:rbac:groups=nodes.ming.xyz,resources=nodepools,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=nodes.ming.xyz,resources=nodepools/status,verbs=get;update;patch
 //+kubebuilder:rbac:groups=nodes.ming.xyz,resources=nodepools/finalizers,verbs=update
+//+kubebuilder:rbac:groups="",resources=nodes,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups="node.k8s.io",resources=runtimeclasses,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups="",resources=events,namespace=default,verbs=get;list;watch;create;update;patch;delete
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.

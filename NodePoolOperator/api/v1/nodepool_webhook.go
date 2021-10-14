@@ -40,7 +40,7 @@ func (r *NodePool) SetupWebhookWithManager(mgr ctrl.Manager) error {
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 
-//+kubebuilder:webhook:path=/mutate-nodes-lailin-xyz-v1-nodepool,mutating=true,failurePolicy=fail,sideEffects=None,groups=nodes.lailin.xyz,resources=nodepools,verbs=create;update,versions=v1,name=mnodepool.kb.io,admissionReviewVersions={v1,v1beta1}
+//+kubebuilder:webhook:path=/mutate-nodes-ming-xyz-v1-nodepool,mutating=true,failurePolicy=fail,sideEffects=None,groups=nodes.ming.xyz,resources=nodepools,verbs=create;update,versions=v1,name=mnodepool.kb.io,admissionReviewVersions={v1,v1beta1}
 
 var _ webhook.Defaulter = &NodePool{}
 
@@ -50,12 +50,12 @@ func (r *NodePool) Default() {
 
 	// 如果 labels 为空，我们就给 labels 加一个默认值
 	if len(r.Labels) == 0 {
-		r.Labels = map[string]string{"node-pool.lailin.xyz": r.Name}
+		r.Labels = map[string]string{"node-pool.ming.xyz": r.Name}
 	}
 }
 
 // TODO(user): change verbs to "verbs=create;update;delete" if you want to enable deletion validation.
-//+kubebuilder:webhook:path=/validate-nodes-lailin-xyz-v1-nodepool,mutating=false,failurePolicy=fail,sideEffects=None,groups=nodes.lailin.xyz,resources=nodepools,verbs=create;update,versions=v1,name=vnodepool.kb.io,admissionReviewVersions={v1,v1beta1}
+//+kubebuilder:webhook:path=/validate-nodes-ming-xyz-v1-nodepool,mutating=false,failurePolicy=fail,sideEffects=None,groups=nodes.ming.xyz,resources=nodepools,verbs=create;update,versions=v1,name=vnodepool.kb.io,admissionReviewVersions={v1,v1beta1}
 
 var _ webhook.Validator = &NodePool{}
 
